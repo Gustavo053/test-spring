@@ -25,7 +25,7 @@ public class PetController {
 
     @GetMapping(value = "/{id}")
     public Pet findOne(@PathVariable Long id) {
-        Pet pet =  petService.findById(id);
+        Pet pet = petService.findById(id);
 
         if (pet == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, messageService.get("pet.not-found"));
@@ -41,7 +41,7 @@ public class PetController {
 
     @PutMapping(value = "/{id}")
     public Pet update(@PathVariable Long id, @RequestBody Pet pet) {
-        Pet petReturned =  petService.update(id, pet);
+        Pet petReturned = petService.update(id, pet);
 
         if (petReturned == null) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, messageService.get("pet.not-found"));
