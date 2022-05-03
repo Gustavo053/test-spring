@@ -20,4 +20,10 @@ public class Pet {
     private String name;
     private Integer age;
     private String breed;
+
+    public Pet (String name, Integer age, String breed) {
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+    }
 }
