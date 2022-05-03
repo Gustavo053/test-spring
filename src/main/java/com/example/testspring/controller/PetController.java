@@ -1,4 +1,4 @@
-package com.example.testspring.integration.controller;
+package com.example.testspring.controller;
 
 import com.example.testspring.model.Pet;
 import com.example.testspring.service.MessageService;

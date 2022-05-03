@@ -1,6 +1,6 @@
 package com.example.testspring.unit.controller;
 
-import com.example.testspring.integration.controller.PetController;
+import com.example.testspring.controller.PetController;
 import com.example.testspring.model.Pet;
 import com.example.testspring.service.MessageService;
 import com.example.testspring.service.PetService;
